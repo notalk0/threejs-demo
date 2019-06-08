@@ -11,9 +11,7 @@ function init() {
   );
 
   renderer = new THREE.WebGLRenderer({ antialias: true }); // antialias: make edges sharp
-
   renderer.setSize(window.innerWidth, window.innerHeight);
-
   document.body.appendChild(renderer.domElement);
 
   const geometry = new THREE.BoxGeometry(1, 1, 1);
@@ -23,7 +21,6 @@ function init() {
 
   cube = new THREE.Mesh(geometry, material);
   scene.add(cube);
-
   camera.position.z = 5;
 }
 
